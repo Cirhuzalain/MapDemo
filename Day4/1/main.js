@@ -11,7 +11,8 @@ var circle = L.circle([-3.366144, 29.362078], {color: 'red',fillColor: '#f03',fi
 var popup = L.popup();
 
 function onMapClick(e) {
-    popup.setLatLng(e.latlng).setContent("Vous avez cliquer sur la carte " + e.latlng.toString()).openOn(map);
+    // popup.setLatLng(e.latlng).setContent("Vous avez cliquer sur la carte " + e.latlng.toString()).openOn(map);
+    console.log("Position : " + e.latlng.toString());
 }
 map.on('click', onMapClick);
 
